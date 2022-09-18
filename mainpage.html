@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAMP OFF</title>
+</head>
+<body>
+    
+    <style>
+        
+        body{
+            background-color: darkgrey;
+        }
+        
+        img {
+          width: 10%;
+          margin-left: 600px;
+          margin-top: 150px;
+          
+        }
+        button{
+            margin-left: 645px;
+            margin-top: 15px;
+        }
+
+    </style>
+
+    <div>
+        <img id= "lamp" src="bulb-off.png" alt="">
+        <br>
+        <button onclick="on()" type="button">Light On</button> <br>
+        <button onclick="off()" type="button">Light Off</button>
+
+    </div>
+    <script>
+    function on(){
+    document.getElementById("lamp").src='bulb-on.png';
+    }
+
+    function off(){
+    document.getElementById("lamp").src='bulb-off.png';
+    }
+
+    </script>
+</body>
+</html>
